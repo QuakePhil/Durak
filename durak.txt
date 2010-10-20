@@ -1,0 +1,148 @@
+
+                        DURAK, a card game
+  by GuPH                                          http://guph.8m.com
+
+  WTF:
+
+  It's a well known (in Russia anyway) Russian game of cards..  It is very
+  simple and very playable (which is why I made a computer able to play it in
+  this prog).  Durak in Russian means Stupid, and the way it goes is the
+  person that loses, is a Stupid :)..  Of course this is one way to see whos
+  dumber, human or machine ;).
+
+  Set the cheat variable (search for it :P) to 1 to see your oponnents cards.
+  This of course is no fun, so use it only if youre new to the game and you
+  want to see how it works (and you've read the below stuff and still didn't
+  understand it...  then youre a durak, but what can I say :)
+
+  RULES:
+
+  Not all cards are used of the 52 card deck..  Only 36 cards (6 through ACE,
+  all suits) are used.
+
+  Cards are ranked by face.  The higher the face of the card, the higher its
+  rank.  Suit doesn't matter as far as ranking goes except for the wildcard
+  (explained next).
+
+  The players are dealt 6 cards each, the remaining put aside, with the
+  topmost card of the deck from the remaining 24 (36-6*2) cards is put
+  underneath the deck face up.  This is the wildcard, the suit of this card
+  is the strongest (all other suits are equal amongst themselves).  (The
+  dealing is done automatically by the program.)
+
+  For example, if Diamonds is the wildcard, a Jack of Spades is stronger than
+  a 10 of Spades, but a Six of Diamonds is strongest of the three.  In the
+  same manner, a Seven of Diamonds is stronger of the four.  The strongest
+  card of the whole deck is a wildcard ace.
+
+  During a turn, the player can be either attacking or defending.  When the
+  player is attacking, when it's his turn, he starts out by putting down a
+  random card.  The defender retaliates by putting down a stronger card (a
+  wildcard, or a card of the same suit and higher face).  The defender's card
+  must be of the same suit unless its a wildcard.  If the attacker puts down
+  a wildcard, the defender can only defend with the same kind of card (but
+  higher face).  (Scroll down to see instructions below on how to use the
+  keyboard to attack and defend.)
+
+  Once defeated, the attacker can attack with another card, as long as its
+  face is the same one as the previous attack or defend card(s), and as long
+  as no more than 6 pairs of attack/defeat cards have been used.  (So if a
+  defender can hold off a 6 card attack, or if the attacker has no more cards
+  of the same face as the play cards, its the defenders turn)
+
+  For example, say the wildcard is Diamonds, I attack with a 10 of Spades and
+  the defender defends with a Jack of Spades, now I can put down any kind of
+  a 10 or a Jack (no matter the suit).  If I have no such cards it is now the
+  defenders turn to attack.
+
+  If the defender has no cards that can outmach the attackers card, he takes
+  the card that he can't outmach, as well as any other cards that he
+  previously defended in this turn (along with all the cards he put down to
+  defend them too).
+
+  (So if a defender defends a 5 card attack, and on the sixth card he cant
+  defend (that sucks! :) he takes allll 11 play cards (5*2 + 1))
+
+  When turns change, the players can refill their cards.  If a player's card
+  count is below 6, he must take as many cards as he needs to refill his
+  cards up to 6.  He can't refill if his card count is more or equal to 6.
+  If the deck runs out of cards (the bottom card must also be used as (the
+  last) refill card), then the game is close to an end.  (Refilling is done
+  automatically by the program.)
+
+  The first person to run out of cards, with no deck remaining to refill
+  from, wins, and the loser is a... Durak!! :)
+
+  STRATEGIES:
+
+  When you are attacking, use a cheap, weak, "dispendable" card to start.
+  You want to leave your wildcards and strong cards for that dark moment when
+  the attacker is on a killing spree.  If you see a chain attack involving
+  wildcards that can force the defender to take the play cards, then it is up
+  to you.
+
+  When defending use the lowest rank card that can still defend the attacking
+  card.  So if the attacker puts down an 8 of Spades, and you have a 10 of
+  Spades and a Jack of Spades, it is better to put down the 10 instead of
+  a Jack. (It really doesn't matter, because you have both the Jack and a 10,
+  and they can defeat all the Spades below them, but if it was, for example,
+  a Queen and a 10, then the Queen could defeat a future attack with a Jack,
+  but a 10 cant!)
+
+  When you must, take the card.  If you can defend a weak card, but at a high
+  price, the best bet is not to do it.  For example, again the wildcards are
+  Diamonds, and you are attacked with a Six of Spades.  You have no Spades,
+  and the only wildcard you have is a King of Diamonds.  Do you really want
+  to waste such a powerful card on a miniscule Six of Spades?  Didn't think
+  so :)
+
+  Try and see what suits your oponnent can't defend.  For example, if you
+  give him a 6 of Spades, and he immediately takes it, he probably has no
+  Spades (except that 6, hehe).  Just bombard him with any Spades you have
+  in increasing rank, so he takes them all.  It could also be that he didnt
+  want to use a wildcard on that 6 of Spades, but you can still sneak in a
+  few cards before he starts defending (just expect those cards to make a
+  comeback appearance once he starts attacking).
+
+  The ending is the most important part of the game (when the deck is used
+  up).  I've seen people with almost all wildcards lose because the oponnent
+  was smarter than them (and thus, not a Durak :).  There are many strategies
+  to play in the end.  One is to attack in pairs, and increasing in rank;
+  there are many more.
+
+  If you are an avid card player, you would have remembered the cards played
+  and should know most of his cards...
+
+  INSTRUCTIONS:
+
+  Use the LEFT/RIGHT arrow keys, to select a card.  Use PGUP/PGDN to scroll
+  through all of your cards, if you took any more than 6 they would be in the
+  7 to 12 slots, so press PGUP to see those, then press PGDN to go back to
+  1 to 6 slots.  (This way you can see how many cards ur oponnent has too).
+  Press the DOWN arrow to select a card, either for defending or attacking.
+  Press ESC to end a turn, if you are attacking, you will stop (probably
+  because you have no other cards to attack with).  If you are defending, and
+  you press ESC you will take all the cards (because you have no cards to
+  defend with, right? :)..  (Otherwise, the turn can be ended, when the
+  computer takes, or stops attacking, as he will see fit :)
+
+  To quit press F10, or play the game to the end press "N".
+
+  The display shows, on the top, YOUR cards, on the bottom, COMPUTER's cards,
+  on the right the player cards from # to #, in the middle, the PLAY cards,
+  and on the left the deck cards (if any).  The number on the deck cards is
+  the number of cards left in the deck (including the bottom-most card, the
+  one face up).
+
+  BLABLA:
+
+  There are many forms of Durak games, including more than two player, games
+  where you can forward and add to attack cards, and et cetera..  The game
+  implemented in this program is as genuine a Durak game as I could get into
+  it..  The only thing thats not right is you can't tie..  That could be
+  implemented I guess, but blah :)
+
+  The AI level is currently is very weak..  Thing is I just wanted to get it
+  working first.  I might make it smarter..  Might not :)
+
+  Hey, its a ton better than solitaire ;)  or is it?
